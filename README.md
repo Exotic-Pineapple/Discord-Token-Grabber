@@ -10,8 +10,7 @@
 7. Paste your webhook URL in the 1st line where it says to
 8. Paste the token that you copied in the 2nd line
 
-**OPTIONAL** Paste the Victim's name in the 3rd line where it says to
-**OPTIONAL** Replace ping = False in the 4th line if you want to get pinged when the message is sent
+**OPTIONAL** Paste the Victim's name in the 3rd line where it says to and you can Replace ping = False  with ping = True in the 4th line if you want to get pinged when the message is sent
 
 9. Click the Run button on the topbar
 
