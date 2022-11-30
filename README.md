@@ -14,9 +14,12 @@
 **OPTIONAL** Replace ping = False in the 4th line if you want to get pinged when the message is sent
 
 9. Click the Run button on the topbar
+10. 
 You should have received a message in that channel of the webhook
 
 # Credits
 Scripts edited by Exotic Pineapple
+
 grabber.javascript was orignally from https://www.folkstalk.com/2022/09/get-discord-token-from-console-with-code-examples.html
+
 sender.py was originally from https://github.com/wodxgod/Discord-Token-Grabber
