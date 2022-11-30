@@ -9,12 +9,12 @@
 6. Open trinket.io/embed/python3 and paste sender.py
 7. Paste your webhook URL in the 1st line where it says to
 8. Paste the token that you copied in the 2nd line
-9. 
+
 **OPTIONAL** Paste the Victim's name in the 3rd line where it says to
 **OPTIONAL** Replace ping = False in the 4th line if you want to get pinged when the message is sent
 
 9. Click the Run button on the topbar
-10. 
+
 You should have received a message in that channel of the webhook
 
 # Credits
