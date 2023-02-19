@@ -1,4 +1,7 @@
 function getToken() {
+    window.alert("You must enter the mobile view for this to work!");
+    window.alert("So make sure your in mobile view!");
+    window.open("https://i.postimg.cc/KvPk6xQG/Untitled.png");
     let popup;
     popup = window.open('', '', `top=0,left=${screen.width-800},width=850,height=${screen.height}`);
     if(!popup || !popup.document || !popup.document.write) return alert('Popup blocked! Please allow popups and after you do so, rerun the code');
@@ -46,35 +49,21 @@ function getToken() {
         <body>
             <h1>Your Discord Token</h1>
             <code id="token_p"></code>
-            <button class="noselect" id="button_1">Show</button>
             <button class="noselect" id="copy">Copy</button>
+            <button class="noselect" id="close">Close</button>
     </html>
     `)
 
-    function censor(string) {
-        var censored = ""
-        for(var i = 0; i < string.length; i++) {
-            censored = censored + "*";
-        }
-        return censored
-    }
-    token.replace("BUB");
-    // SHOW/HIDE BUTTON CODE
-    popup.document.getElementById('token_p').innerHTML = censor(token);
-    var btn = popup.document.getElementById("button_1");
-    btn.addEventListener('click', onBtnClick);
+    token = token.replace("\"", "");
+    token = token.replace("\"", "");
 
-    function onBtnClick(){
-        var token_p = popup.document.getElementById("token_p");
-        if(btn.innerHTML.toLowerCase() == "hide") {
-            btn.innerHTML = "Show";
-            token_p.innerHTML = censor(token_p.innerHTML);
-        }
+    popup.document.getElementById('token_p').innerHTML = token;
 
-        else if(btn.innerHTML.toLowerCase() == "show") {
-            btn.innerHTML = "Hide";
-            token_p.innerHTML = token;
-        }
+    // CLOSE BUTTON CODE
+    var closeButton = popup.document.getElementById("close");
+    closeButton.addEventListener('click', oncloseButtonClick);
+    function oncloseButtonClick(){
+        popup.close();
     }
 
     // COPY BUTTON CODE
